@@ -2,7 +2,7 @@ import { Pokemon } from './pokemon';
 
 export class Region {
   public id:string = '';
-  public Name: string = '';
-  public Description: string = '';
-  public Pokemons: Pokemon[] = [];
+  public name: string = '';
+  public description: string = '';
+  public pokemons: Pokemon[] = [];
 }

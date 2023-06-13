@@ -6,7 +6,7 @@ export class Pokemon {
   public name: string = '';
   public urlPhoto: string = '';
   public regionId: string = '';
-  public region: Region[] = [];
+  public region: Region = new Region;
   public typeId: string = '';
-  public typePokemon: TypePokemon[] = [];
+  public typePokemon: TypePokemon = new TypePokemon;
 }

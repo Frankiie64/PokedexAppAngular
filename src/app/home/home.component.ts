@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Pokemon } from '../models/pokemon';
+import { Region } from '../models/region';
 import { PokemonService } from '../services/pokemon-service.service';
 
 @Component({
@@ -15,7 +16,7 @@ export class HomeComponent {
 
   async ngOnInit() {
     this.pokemons = await this.getPokemons();
-    console.log(this.pokemons);
+
   }
 
   async getPokemons(): Promise<Pokemon[]> {
@@ -25,6 +26,7 @@ export class HomeComponent {
       if(response === undefined){
         return [];
       }
+
       return response;
     } catch (error) {
       console.error(error);
